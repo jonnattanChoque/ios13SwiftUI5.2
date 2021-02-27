@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mapa View Controller-->
+        <scene sceneID="IOi-8d-2pc">
+            <objects>
+                <viewController storyboardIdentifier="Inicio" id="3Bp-HB-Egm" customClass="MapaViewController" customModule="Mapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ts0-VV-ktK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-z3-qGr">
+                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-XS-u8o">
+                                <rect key="frame" x="161" y="63" width="92" height="30"/>
+                                <state key="normal" title="Coordenadas"/>
+                                <connections>
+                                    <segue destination="uXA-1F-FaL" kind="show" id="RIn-HR-pvz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GWz-XS-u8o" firstAttribute="centerX" secondItem="B4g-z3-qGr" secondAttribute="centerX" id="2PY-13-UEG"/>
+                            <constraint firstItem="GWz-XS-u8o" firstAttribute="centerX" secondItem="Ts0-VV-ktK" secondAttribute="centerX" id="HvW-8A-voK"/>
+                            <constraint firstItem="B4g-z3-qGr" firstAttribute="top" secondItem="GWz-XS-u8o" secondAttribute="bottom" constant="17" id="KGV-Zv-0Ab"/>
+                            <constraint firstItem="B4g-z3-qGr" firstAttribute="bottom" secondItem="0lZ-xp-hEA" secondAttribute="bottom" id="YWU-gf-dVJ"/>
+                            <constraint firstItem="B4g-z3-qGr" firstAttribute="leading" secondItem="0lZ-xp-hEA" secondAttribute="leading" id="cwb-ib-oaz"/>
+                            <constraint firstItem="GWz-XS-u8o" firstAttribute="top" secondItem="0lZ-xp-hEA" secondAttribute="top" constant="19" id="xkr-Z1-qJh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0lZ-xp-hEA"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapa" destination="B4g-z3-qGr" id="igN-Bd-8fu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc1-hX-F0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="97.767857142857139"/>
+        </scene>
+        <!--Coordenadas View Controller-->
+        <scene sceneID="o7o-qM-kuF">
+            <objects>
+                <viewController id="uXA-1F-FaL" customClass="CoordenadasViewController" customModule="Mapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eoK-r6-i0F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="coordenadas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg1-hm-9t7">
+                                <rect key="frame" x="54" y="171" width="307" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-Pl-eOS">
+                                <rect key="frame" x="115" y="331" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OBTENER COORDENADAS"/>
+                                <connections>
+                                    <action selector="obtener:" destination="uXA-1F-FaL" eventType="touchUpInside" id="8j6-2L-WO3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pais" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Du7-QT-pLp">
+                                <rect key="frame" x="115" y="255" width="185" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5tj-gD-KhC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="veP-Vu-wyu"/>
+                    <connections>
+                        <outlet property="coordenadas" destination="rg1-hm-9t7" id="4I7-e8-2Ac"/>
+                        <outlet property="pais" destination="Du7-QT-pLp" id="N1S-YU-gzy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXi-Gj-1hW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734.78260869565224" y="93.75"/>
+        </scene>
+    </scenes>
+</document>
