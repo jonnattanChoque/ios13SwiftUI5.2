@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52860EC72654C0C9007BA0AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52860EC62654C0C9007BA0AD /* AppDelegate.swift */; };
+		52860EC92654C0C9007BA0AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52860EC82654C0C9007BA0AD /* SceneDelegate.swift */; };
+		52860ECB2654C0C9007BA0AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52860ECA2654C0C9007BA0AD /* ContentView.swift */; };
+		52860ECE2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52860ECC2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodeld */; };
+		52860ED02654C0CE007BA0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52860ECF2654C0CE007BA0AD /* Assets.xcassets */; };
+		52860ED32654C0CE007BA0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52860ED22654C0CE007BA0AD /* Preview Assets.xcassets */; };
+		52860ED62654C0CE007BA0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52860ED42654C0CE007BA0AD /* LaunchScreen.storyboard */; };
+		52860EE12654C1DD007BA0AD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52860EE02654C1DD007BA0AD /* CloudKit.framework */; };
+		52860EE32654C298007BA0AD /* Personas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52860EE22654C298007BA0AD /* Personas.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52860EC32654C0C9007BA0AD /* SyncCoreDataCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncCoreDataCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52860EC62654C0C9007BA0AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52860EC82654C0C9007BA0AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52860ECA2654C0C9007BA0AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52860ECD2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyncCoreDataCloud.xcdatamodel; sourceTree = "<group>"; };
+		52860ECF2654C0CE007BA0AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52860ED22654C0CE007BA0AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52860ED52654C0CE007BA0AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52860ED72654C0CE007BA0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52860EDE2654C1CB007BA0AD /* SyncCoreDataCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncCoreDataCloud.entitlements; sourceTree = "<group>"; };
+		52860EE02654C1DD007BA0AD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		52860EE22654C298007BA0AD /* Personas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personas.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52860EC02654C0C9007BA0AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52860EE12654C1DD007BA0AD /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52860EBA2654C0C9007BA0AD = {
+			isa = PBXGroup;
+			children = (
+				52860EC52654C0C9007BA0AD /* SyncCoreDataCloud */,
+				52860EC42654C0C9007BA0AD /* Products */,
+				52860EDF2654C1DD007BA0AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52860EC42654C0C9007BA0AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52860EC32654C0C9007BA0AD /* SyncCoreDataCloud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52860EC52654C0C9007BA0AD /* SyncCoreDataCloud */ = {
+			isa = PBXGroup;
+			children = (
+				52860EDE2654C1CB007BA0AD /* SyncCoreDataCloud.entitlements */,
+				52860EC62654C0C9007BA0AD /* AppDelegate.swift */,
+				52860EC82654C0C9007BA0AD /* SceneDelegate.swift */,
+				52860ECA2654C0C9007BA0AD /* ContentView.swift */,
+				52860ECF2654C0CE007BA0AD /* Assets.xcassets */,
+				52860ED42654C0CE007BA0AD /* LaunchScreen.storyboard */,
+				52860ED72654C0CE007BA0AD /* Info.plist */,
+				52860ECC2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodeld */,
+				52860ED12654C0CE007BA0AD /* Preview Content */,
+				52860EE22654C298007BA0AD /* Personas.swift */,
+			);
+			path = SyncCoreDataCloud;
+			sourceTree = "<group>";
+		};
+		52860ED12654C0CE007BA0AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52860ED22654C0CE007BA0AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52860EDF2654C1DD007BA0AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52860EE02654C1DD007BA0AD /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52860EC22654C0C9007BA0AD /* SyncCoreDataCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52860EDA2654C0CE007BA0AD /* Build configuration list for PBXNativeTarget "SyncCoreDataCloud" */;
+			buildPhases = (
+				52860EBF2654C0C9007BA0AD /* Sources */,
+				52860EC02654C0C9007BA0AD /* Frameworks */,
+				52860EC12654C0C9007BA0AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyncCoreDataCloud;
+			productName = SyncCoreDataCloud;
+			productReference = 52860EC32654C0C9007BA0AD /* SyncCoreDataCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52860EBB2654C0C9007BA0AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					52860EC22654C0C9007BA0AD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 52860EBE2654C0C9007BA0AD /* Build configuration list for PBXProject "SyncCoreDataCloud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52860EBA2654C0C9007BA0AD;
+			productRefGroup = 52860EC42654C0C9007BA0AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52860EC22654C0C9007BA0AD /* SyncCoreDataCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52860EC12654C0C9007BA0AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52860ED62654C0CE007BA0AD /* LaunchScreen.storyboard in Resources */,
+				52860ED32654C0CE007BA0AD /* Preview Assets.xcassets in Resources */,
+				52860ED02654C0CE007BA0AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52860EBF2654C0C9007BA0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52860EC72654C0C9007BA0AD /* AppDelegate.swift in Sources */,
+				52860ECE2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodeld in Sources */,
+				52860EC92654C0C9007BA0AD /* SceneDelegate.swift in Sources */,
+				52860EE32654C298007BA0AD /* Personas.swift in Sources */,
+				52860ECB2654C0C9007BA0AD /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52860ED42654C0CE007BA0AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52860ED52654C0CE007BA0AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52860ED82654C0CE007BA0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52860ED92654C0CE007BA0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52860EDB2654C0CE007BA0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncCoreDataCloud/SyncCoreDataCloud.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SyncCoreDataCloud/Preview Content\"";
+				DEVELOPMENT_TEAM = QW63BRFR26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SyncCoreDataCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.datacrm.SyncCoreDataCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52860EDC2654C0CE007BA0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncCoreDataCloud/SyncCoreDataCloud.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SyncCoreDataCloud/Preview Content\"";
+				DEVELOPMENT_TEAM = QW63BRFR26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SyncCoreDataCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.datacrm.SyncCoreDataCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52860EBE2654C0C9007BA0AD /* Build configuration list for PBXProject "SyncCoreDataCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52860ED82654C0CE007BA0AD /* Debug */,
+				52860ED92654C0CE007BA0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52860EDA2654C0CE007BA0AD /* Build configuration list for PBXNativeTarget "SyncCoreDataCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52860EDB2654C0CE007BA0AD /* Debug */,
+				52860EDC2654C0CE007BA0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52860ECC2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52860ECD2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodel */,
+			);
+			currentVersion = 52860ECD2654C0C9007BA0AD /* SyncCoreDataCloud.xcdatamodel */;
+			path = SyncCoreDataCloud.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52860EBB2654C0C9007BA0AD /* Project object */;
+}
