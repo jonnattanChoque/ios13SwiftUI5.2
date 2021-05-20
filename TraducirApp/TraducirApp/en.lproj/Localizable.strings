@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  TraducirApp
+
+  Created by MacBook Pro  on 19/05/21.
+  
+*/
+
+"title" = "Welcome to my app";
+"button" = "Click in this button";
+"title" = "My alert";
+"message" = "Message from alert";
+"close" = "Close";
+"titleDate" = "Choose Date";
+"image" = "Welcome";
